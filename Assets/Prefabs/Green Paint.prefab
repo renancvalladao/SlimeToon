@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 5851953112241940088}
   - component: {fileID: 4885900707775504870}
   - component: {fileID: 3868512689395815891}
+  - component: {fileID: 4565618174880462004}
+  - component: {fileID: 7141417977841505863}
   m_Layer: 0
   m_Name: Green Paint
   m_TagString: Painting
@@ -72,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d16e4a8caf63ca947a4e98339fcae33f, type: 3}
+  m_Sprite: {fileID: 4260199141051893192, guid: 3ad222a7c32d4e240a447d180f13ed0a, type: 3}
   m_Color: {r: 0.11885698, g: 1, b: 0.10849059, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -96,3 +98,48 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   color: Green
+--- !u!95 &4565618174880462004
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3401803978271405910}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 966592c80d0e9c04e84478f1e186e91b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!61 &7141417977841505863
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3401803978271405910}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0103753805, y: -0.059659094}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 2}
+    newSize: {x: 0.984375, y: 0.984375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 2
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.7094867, y: 0.66675085}
+  m_EdgeRadius: 0
