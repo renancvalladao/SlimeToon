@@ -8,6 +8,8 @@ public class SceneManagement : MonoBehaviour
 {
     public static bool gameIsPaused = false;
 
+    public GameObject pauseMenuUI;
+
     public void ResetGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
@@ -28,12 +30,14 @@ public class SceneManagement : MonoBehaviour
 
     public void Pause()
     {
+        pauseMenuUI.SetActive(true);
         gameIsPaused = true;
         Time.timeScale = 0;
     }
 
     public void Resume()
     {
+        pauseMenuUI.SetActive(false);
         gameIsPaused = false;
         Time.timeScale = 1;
     }
