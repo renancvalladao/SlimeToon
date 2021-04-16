@@ -8,13 +8,12 @@ public class PlayerController : MonoBehaviour
     internal PlayerMovement movementScript;
 
     public string playerColor;
-    // Start is called before the first frame update
+
     void Start()
     {
         playerColor = "Colorless";
     }
 
-    // Update is called once per frame
     void Update()
     {
         

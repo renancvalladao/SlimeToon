@@ -15,17 +15,9 @@ public class SceneManagement : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
-    public void PauseGame()
+    public void CompleteLevel()
     {
-        gameIsPaused = !gameIsPaused;
-        if (gameIsPaused)
-        {
-            Time.timeScale = 0;
-        }
-        else
-        {
-            Time.timeScale = 1;
-        }
+        print("Won");
     }
 
     public void Pause()
