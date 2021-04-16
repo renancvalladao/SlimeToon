@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 // Classe responsável pela coleta da tinta pelo Player
-public class PaintPicker : MonoBehaviour
+public class CrystalPicker : MonoBehaviour
 {
     [SerializeField]
     internal PlayerController controllerScript;
@@ -13,9 +13,9 @@ public class PaintPicker : MonoBehaviour
     // Além disso, muda a cor do Player para a cor da tinta que ele coletou, destrói o objeto e chama a função que altera a sprite do Player para a cor correspondente
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.transform.tag == "Paint")
+        if (collision.CompareTag("Crystal"))
         {
-            string color = collision.GetComponent<Painter>().Color;
+            string color = collision.GetComponent<Crystal>().Color;
             Destroy(collision.gameObject);
             if (controllerScript.playerColor == "Colorless")
             {
@@ -27,11 +27,11 @@ public class PaintPicker : MonoBehaviour
             }
             switch (color)
             {
-                case "Purple":
-                    controllerScript.ChangeToPurple();
+                case "Blue":
+                    controllerScript.ChangeToBlue();
                     break;
-                case "Green":
-                    controllerScript.ChangeToGreen();
+                case "Orange":
+                    controllerScript.ChangeToOrange();
                     break;
             }   
         }

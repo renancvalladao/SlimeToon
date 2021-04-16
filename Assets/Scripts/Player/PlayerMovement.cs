@@ -44,8 +44,8 @@ public class PlayerMovement : MonoBehaviour
     {
         if (!SceneManagement.gameIsPaused)
         {
-            //MovementInput();
-            MobileInput();
+            MovementInput();
+            //MobileInput();
         }
         NextPosition();
     }

@@ -26,6 +26,30 @@ TextureImporter:
   - first:
       213: 6637788576220345497
     second: PainterOrange_7
+  - first:
+      213: 969086095401507697
+    second: CrystalOrange_0
+  - first:
+      213: 5049626429013260280
+    second: CrystalOrange_1
+  - first:
+      213: 278226118903798317
+    second: CrystalOrange_2
+  - first:
+      213: -677733605254862653
+    second: CrystalOrange_3
+  - first:
+      213: 853259134166272722
+    second: CrystalOrange_4
+  - first:
+      213: 2407599958344568013
+    second: CrystalOrange_5
+  - first:
+      213: -3682429381039563949
+    second: CrystalOrange_6
+  - first:
+      213: -6600700741140115693
+    second: CrystalOrange_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -127,7 +151,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PainterOrange_0
+      name: CrystalOrange_0
       rect:
         serializedVersion: 2
         x: 0
@@ -141,14 +165,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 48427466841f537b0800000000000000
-      internalID: -5245020897747196796
+      spriteID: 17b5d295ba2e27d00800000000000000
+      internalID: 969086095401507697
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PainterOrange_1
+      name: CrystalOrange_1
       rect:
         serializedVersion: 2
         x: 35
@@ -162,14 +186,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0589531a95726e650800000000000000
-      internalID: 6261735597815470160
+      spriteID: 8f772cdab70e31640800000000000000
+      internalID: 5049626429013260280
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PainterOrange_2
+      name: CrystalOrange_2
       rect:
         serializedVersion: 2
         x: 70
@@ -183,14 +207,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0cc4227d13ad4b510800000000000000
-      internalID: 1564114878202006720
+      spriteID: d2a1f785e257cd300800000000000000
+      internalID: 278226118903798317
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PainterOrange_3
+      name: CrystalOrange_3
       rect:
         serializedVersion: 2
         x: 105
@@ -204,14 +228,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d11e3982ced620610800000000000000
-      internalID: 1585950879848325405
+      spriteID: 3c8607670e43896f0800000000000000
+      internalID: -677733605254862653
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PainterOrange_4
+      name: CrystalOrange_4
       rect:
         serializedVersion: 2
         x: 140
@@ -225,14 +249,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b62d8fc91f831cf30800000000000000
-      internalID: 4594015705266442859
+      spriteID: 2da865969a267db00800000000000000
+      internalID: 853259134166272722
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PainterOrange_5
+      name: CrystalOrange_5
       rect:
         serializedVersion: 2
         x: 175
@@ -246,14 +270,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8673ed0ddb4eeac90800000000000000
-      internalID: -7156531253940963480
+      spriteID: dcc8f56f763896120800000000000000
+      internalID: 2407599958344568013
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PainterOrange_6
+      name: CrystalOrange_6
       rect:
         serializedVersion: 2
         x: 210
@@ -267,14 +291,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 705a8010745d2f7e0800000000000000
-      internalID: -1733088405647481593
+      spriteID: 35bdca00df165ecc0800000000000000
+      internalID: -3682429381039563949
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PainterOrange_7
+      name: CrystalOrange_7
       rect:
         serializedVersion: 2
         x: 245
@@ -288,8 +312,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 99472c3aa892e1c50800000000000000
-      internalID: 6637788576220345497
+      spriteID: 31f8fafd5a99564a0800000000000000
+      internalID: -6600700741140115693
       vertices: []
       indices: 
       edges: []

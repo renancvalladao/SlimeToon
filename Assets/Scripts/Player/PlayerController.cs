@@ -20,14 +20,15 @@ public class PlayerController : MonoBehaviour
         
     }
 
-    public void ChangeToPurple()
+    public void ChangeToBlue()
     {
         SpriteRenderer Sprite = GetComponent<SpriteRenderer>();
-        Sprite.color = new Color(1, 0, 1, 1);
+        Sprite.color = new Color(0, 0.5f, 1, 1);
     }
-    public void ChangeToGreen()
+
+    public void ChangeToOrange()
     {
         SpriteRenderer Sprite = GetComponent<SpriteRenderer>();
-        Sprite.color = new Color(0, 1, 0, 1);
+        Sprite.color = new Color(1, 0.5f, 0, 1);
     }
 }
