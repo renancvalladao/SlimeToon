@@ -14,6 +14,7 @@ public class MapManager : MonoBehaviour
 
     private Dictionary<TileBase, TileData> dataFromTiles;
 
+    // Cria um dicionário de tiles e sua informação (se pode ser pintado)
     private void Awake()
     {
         dataFromTiles = new Dictionary<TileBase, TileData>();
@@ -31,6 +32,7 @@ public class MapManager : MonoBehaviour
 
     }
 
+    // Verifica se o um tile, dada uma posição, pode ser pintado
     public bool GetTileCanPaint(Vector2 worldPosition)
     {
         Vector3Int gridPosition = map.WorldToCell(worldPosition);

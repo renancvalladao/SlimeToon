@@ -4,6 +4,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+// Classe responsável pelo estado da cena
 public class SceneManagement : MonoBehaviour
 {
     public static bool gameIsPaused = false;

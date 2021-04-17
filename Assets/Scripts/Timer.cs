@@ -5,6 +5,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 
+// Classe responsável pelo timer
 public class Timer : MonoBehaviour
 {
     public TextMeshProUGUI timeCounter;
@@ -13,12 +14,14 @@ public class Timer : MonoBehaviour
 
     private float elapsedTime;
 
+    // Inicia o timer com 0 segundos
     void Start()
     {
         timeCounter.text = "Time: 00:00";
         elapsedTime = 0f;
     }
 
+    // Se o jogo não tiver pausado, o timer é incrementado
     void Update()
     {
         if (!SceneManagement.gameIsPaused)

@@ -51,7 +51,7 @@ public class PaintManager : MonoBehaviour
         }
     }
 
-    // Função responsável por criar o objeto que "suja" o chão
+    // Método responsável por criar o objeto que "suja" o chão
     private void PaintTile(Vector3Int tilePosition, string color)
     {
         Paint newPaint = Instantiate(paintPrefab[color]);
