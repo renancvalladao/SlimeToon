@@ -17,7 +17,7 @@ public class Timer : MonoBehaviour
     // Inicia o timer com 0 segundos
     void Start()
     {
-        timeCounter.text = "Time: 00:00";
+        timeCounter.text = "00:00";
         elapsedTime = 0f;
     }
 
@@ -28,7 +28,7 @@ public class Timer : MonoBehaviour
         {
             elapsedTime += Time.deltaTime;
             timePlaying = TimeSpan.FromSeconds(elapsedTime);
-            string timePlayingString = "Time: " + timePlaying.ToString(@"mm\:ss");
+            string timePlayingString = timePlaying.ToString(@"mm\:ss");
             timeCounter.text = timePlayingString;
         }
         

@@ -44,8 +44,8 @@ public class PlayerMovement : MonoBehaviour
     {
         if (!SceneManagement.gameIsPaused)
         {
-            MovementInput();
-            //MobileInput();
+            //MovementInput();
+            MobileInput();
         }
         NextPosition();
     }
@@ -139,15 +139,12 @@ public class PlayerMovement : MonoBehaviour
     // O input é dado a partir do movimento de deslizar o dedo na tela, captando direção e sentido
     void MobileInput()
     {
+        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
+        {
+            startTouchPosition = Input.GetTouch(0).position;
+        }
         if (transform.position == movePoint.position)
         {
-            mx = 0;
-            my = 0;
-            if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
-            {
-                startTouchPosition = Input.GetTouch(0).position;
-            }
-
             if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Moved)
             {
                 currentPosition = Input.GetTouch(0).position;
@@ -179,11 +176,11 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
-        if(Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Ended)
+        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Ended)
         {
             stopTouch = false;
             endTouchPosition = Input.GetTouch(0).position;
-            Vector2 Distance = endTouchPosition - startTouchPosition;
+            //Vector2 Distance = endTouchPosition - startTouchPosition;
         }
     }
 }

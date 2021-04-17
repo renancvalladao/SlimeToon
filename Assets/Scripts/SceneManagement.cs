@@ -9,7 +9,8 @@ public class SceneManagement : MonoBehaviour
 {
     public static bool gameIsPaused = false;
 
-    public GameObject pauseMenuUI;
+    [SerializeField]
+    private GameObject pauseMenuUI = null;
 
     public void ResetGame()
     {
@@ -23,16 +24,39 @@ public class SceneManagement : MonoBehaviour
 
     public void Pause()
     {
-        pauseMenuUI.SetActive(true);
-        gameIsPaused = true;
-        Time.timeScale = 0;
+        if (pauseMenuUI != null)
+        {
+            pauseMenuUI.SetActive(true);
+            gameIsPaused = true;
+            Time.timeScale = 0;
+        }
+        
     }
 
     public void Resume()
     {
-        pauseMenuUI.SetActive(false);
-        gameIsPaused = false;
-        Time.timeScale = 1;
+        if (pauseMenuUI != null)
+        {
+            pauseMenuUI.SetActive(false);
+            gameIsPaused = false;
+            Time.timeScale = 1;
+        }
+            
+    }
+
+    public void Settings()
+    {
+        Debug.Log("Settings");
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
+    public void PlayGame()
+    {
+        SceneManager.LoadScene("Stage01");
     }
 
     void OnApplicationFocus(bool hasFocus)
