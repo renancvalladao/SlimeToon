@@ -12,6 +12,9 @@ public class SceneManagement : MonoBehaviour
     [SerializeField]
     private GameObject pauseMenuUI = null;
 
+    [SerializeField]
+    private GameObject winMenuUI = null;
+
     public void ResetGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
@@ -19,7 +22,31 @@ public class SceneManagement : MonoBehaviour
 
     public void CompleteLevel()
     {
-        print("Won");
+        winMenuUI.SetActive(true);
+        gameIsPaused = true;
+        //Time.timeScale = 0;
+    }
+
+    public void PlayAgain()
+    {
+        gameIsPaused = false;
+        //Time.timeScale = 1;
+        ResetGame();
+    }
+
+    public void LoadStage(string stage)
+    {
+        SceneManager.LoadScene(stage);
+    }
+
+    public void StageSelection()
+    {
+        if (gameIsPaused)
+        {
+            gameIsPaused = false;
+            Time.timeScale = 1;
+        }       
+        SceneManager.LoadScene("StageSelection");
     }
 
     public void Pause()
@@ -44,6 +71,11 @@ public class SceneManagement : MonoBehaviour
             
     }
 
+    public void TitleScreen()
+    {
+        SceneManager.LoadScene("TitleScreen");
+    }
+
     public void Settings()
     {
         Debug.Log("Settings");
@@ -56,7 +88,7 @@ public class SceneManagement : MonoBehaviour
 
     public void PlayGame()
     {
-        SceneManager.LoadScene("Stage01");
+        SceneManager.LoadScene("StageSelection");
     }
 
     void OnApplicationFocus(bool hasFocus)
