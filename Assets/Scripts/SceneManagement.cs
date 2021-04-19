@@ -98,6 +98,9 @@ public class SceneManagement : MonoBehaviour
 
     void OnApplicationPause(bool pauseStatus)
     {
-        Pause();
+        if (!gameIsPaused)
+        {
+            Pause();
+        }
     }
 }

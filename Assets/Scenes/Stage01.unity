@@ -661,7 +661,7 @@ GameObject:
   m_Layer: 0
   m_Name: Player Move Point
   m_TagString: Untagged
-  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1565,11 +1565,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6212956823397198566, guid: 248eecc5f6ac64343a1e74c45b75c955, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.40704012
+      value: -0.375
       objectReference: {fileID: 0}
     - target: {fileID: 6212956823397198566, guid: 248eecc5f6ac64343a1e74c45b75c955, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.628675
+      value: 2.6335716
       objectReference: {fileID: 0}
     - target: {fileID: 6212956823397198566, guid: 248eecc5f6ac64343a1e74c45b75c955, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4049,6 +4049,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementScript: {fileID: 1830174325}
+  orangeAnim: {fileID: 22100000, guid: 110982ff94053454bb6709d67ce5ba28, type: 2}
+  blueAnim: {fileID: 22100000, guid: fdde4dffce8a3ab499b161e42ccdf003, type: 2}
   playerColor: 
 --- !u!61 &1830174322
 BoxCollider2D:
@@ -4066,8 +4068,8 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.2}
-    oldSize: {x: 1, y: 1.6285714}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.9142857, y: 0.6571429}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -4175,7 +4177,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: 2216158058081842760, guid: 2b229e281e079154cb42615ae1a309e2, type: 3}
+  m_Sprite: {fileID: 7287120180930020996, guid: f5316a190699b8a4baae273a7abb2cee, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

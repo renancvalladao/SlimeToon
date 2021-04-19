@@ -8,7 +8,13 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     internal PlayerMovement movementScript;
 
+    public AnimatorOverrideController orangeAnim;
+    public AnimatorOverrideController blueAnim;
+
     public string playerColor;
+
+    private float mx;
+    private float my;
 
     // Inicia o jogador como incolor
     void Start()
@@ -24,14 +30,20 @@ public class PlayerController : MonoBehaviour
     // Método que altera o slime para azul
     public void ChangeToBlue()
     {
-        SpriteRenderer Sprite = GetComponent<SpriteRenderer>();
-        Sprite.color = new Color(0, 0.5f, 1, 1);
+        mx = GetComponent<Animator>().GetFloat("moveX");
+        my = GetComponent<Animator>().GetFloat("moveY");
+        GetComponent<Animator>().runtimeAnimatorController = blueAnim as RuntimeAnimatorController;
+        GetComponent<Animator>().SetFloat("moveX", mx);
+        GetComponent<Animator>().SetFloat("moveY", my);
     }
 
     // Método que altera o slime para laranja
     public void ChangeToOrange()
     {
-        SpriteRenderer Sprite = GetComponent<SpriteRenderer>();
-        Sprite.color = new Color(1, 0.5f, 0, 1);
+        mx = GetComponent<Animator>().GetFloat("moveX");
+        my = GetComponent<Animator>().GetFloat("moveY");
+        GetComponent<Animator>().runtimeAnimatorController = orangeAnim as RuntimeAnimatorController;
+        GetComponent<Animator>().SetFloat("moveX", mx);
+        GetComponent<Animator>().SetFloat("moveY", my);
     }
 }

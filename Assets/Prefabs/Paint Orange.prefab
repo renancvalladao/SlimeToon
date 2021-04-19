@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4565618174880462004}
   - component: {fileID: 7141417977841505863}
   m_Layer: 0
-  m_Name: Green Paint
+  m_Name: Paint Orange
   m_TagString: Painting
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -79,7 +79,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
-  m_Size: {x: 0.984375, y: 0.984375}
+  m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -134,8 +134,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 2}
-    newSize: {x: 0.984375, y: 0.984375}
+    oldSize: {x: 0.8857143, y: 0.8857143}
+    newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 2
     adaptiveTiling: 0

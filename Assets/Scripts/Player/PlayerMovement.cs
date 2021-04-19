@@ -34,8 +34,11 @@ public class PlayerMovement : MonoBehaviour
 
     public float swipRange;
 
+    private Animator animator;
+
     void Start()
     {
+        animator = GetComponent<Animator>();
         gridSize = grid.cellSize.x; // Essa variável é usada para calcular a distância baseada no tamanho do grid
         movePoint.parent = null; // Desfaz a associação entre Player e Player Move Point, para que ele se mova de forma livre
     }
@@ -61,7 +64,7 @@ public class PlayerMovement : MonoBehaviour
         if(transform.position == movePoint.position)
         {
             mx = Input.GetAxisRaw("Horizontal");
-            if(mx == 0)
+            if (mx == 0)
             {
                 my = Input.GetAxisRaw("Vertical");
             }
@@ -89,19 +92,27 @@ public class PlayerMovement : MonoBehaviour
                         if (paintManager.NextColor(nextPos) == controllerScript.playerColor) // Verifica se a cor do que seria a próxima posição é igual a do Player
                         {
                             movePoint.position += new Vector3(gridSize * mx, 0f, 0f);
+                            animator.SetBool("moving", true);
+                            animator.SetFloat("moveX", mx);
+                            animator.SetFloat("moveY", 0);
                         }
                         else
                         {
+                            animator.SetBool("moving", false);
                             mx = 0;
                         }
                     }
                     else
                     {
                         movePoint.position += new Vector3(gridSize * mx, 0f, 0f);
+                        animator.SetBool("moving", true);
+                        animator.SetFloat("moveX", mx);
+                        animator.SetFloat("moveY", 0);
                     }
                 }
                 else
                 {
+                    animator.SetBool("moving", false);
                     mx = 0;
                 }
             }
@@ -115,19 +126,27 @@ public class PlayerMovement : MonoBehaviour
                         if (paintManager.NextColor(nextPos) == controllerScript.playerColor)
                         {
                             movePoint.position += new Vector3(0f, gridSize * my, 0f);
+                            animator.SetBool("moving", true);
+                            animator.SetFloat("moveX", 0);
+                            animator.SetFloat("moveY", my);
                         }
                         else
                         {
+                            animator.SetBool("moving", false);
                             my = 0;
                         }
                     }
                     else
                     {
                         movePoint.position += new Vector3(0f, gridSize * my, 0f);
+                        animator.SetBool("moving", true);
+                        animator.SetFloat("moveX", 0);
+                        animator.SetFloat("moveY", my);
                     }
                 }
                 else
                 {
+                    animator.SetBool("moving", false);
                     my = 0;
                 }
             }
