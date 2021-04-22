@@ -2,13 +2,12 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
 using UnityEngine.UI;
 
 // Classe responsável pelo timer
 public class Timer : MonoBehaviour
 {
-    public TextMeshProUGUI timeCounter;
+    public Text timeCounter;
 
     private TimeSpan timePlaying;
 

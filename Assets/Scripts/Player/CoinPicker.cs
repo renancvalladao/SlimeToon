@@ -1,5 +1,4 @@
 using UnityEngine;
-using TMPro;
 using UnityEngine.UI;
 
 // Classe responsável pela coleta das moedas e atualização do texto do contador
@@ -10,7 +9,7 @@ public class CoinPicker : MonoBehaviour
     [SerializeField]
     private SceneManagement sceneManager;
 
-    public TextMeshProUGUI textCoins;
+    public Text textCoins;
 
     private void Start()
     {
